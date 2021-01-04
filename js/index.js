@@ -1,0 +1,2 @@
+//Developed by Leandro Safra
+//JS FILE FOR ALL WOOD PROJECT (LITTLE PROJECT)
