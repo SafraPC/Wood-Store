@@ -1,0 +1,44 @@
+/* width */
+.header {
+  width: 100vw;
+  height: 80px;
+  opacity: 40%;
+  border-radius: 0.3rem;
+  background-color: #300c38;
+}
+
+.nav {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+}
+.nav-item {
+  height: 100%;
+  width: 33%;
+  font-size: 1.3rem;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.nav-item:hover {
+  border-left: 0.01px solid purple;
+  border-right: 0.01px solid purple;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  display: none;
+}
