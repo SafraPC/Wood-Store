@@ -11,7 +11,7 @@ body {
 
 .iFrameHeader {
   width: 95%;
-  height: auto;
+  height: 80px;
   border: none;
 }
 
@@ -22,33 +22,52 @@ body {
   height: auto;
   margin: 0 auto;
   background-color: var(--color-black);
-  margin-top: -10px;
   box-shadow: 0.1px 0.2px 5px 2px var(--color-borders);
 }
 
 .titleBody {
-  height: 2vw;
+  height: 5rem;
   width: 100%;
-  color: var(--color-text);
-  margin: 0 auto;
+  color: var(--color-secondary);
+  font-family: var(--font-family-always);
+  font-weight: var(--font-weight-title);
+  font-size: var(--font-title-size);
+  line-height: 5rem;
   text-align: center;
   justify-content: center;
 }
 .contentLeft {
   color: var(--color-text);
+  font-family: var(--font-family-always);
+  font-weight: var(--font-weight-text);
   margin-top: 3rem;
   width: 45%;
-  margin-left: 10px;
+
+  margin-left: 3rem;
   text-align: justify;
+  padding-bottom: 1.5rem;
 }
 .contentRight {
   color: var(--color-text);
-  margin-inline-start: auto;
+  font-family: var(--font-family-always);
+  font-weight: var(--font-weight-text);
   margin-top: 3rem;
+  margin-inline-start: auto;
   width: 45%;
-  margin-right: 10px;
+  margin-right: 3rem;
   text-align: justify;
   padding-bottom: 1.5rem;
+}
+.contentCenter {
+  height: 5rem;
+  width: 100%;
+  color: var(--color-secondary);
+  font-family: var(--font-family-always);
+  font-weight: var(--font-weight-text);
+  font-size: var(--font-text-size);
+  line-height: 5rem;
+  text-align: center;
+  justify-content: center;
 }
 
 :root {
@@ -68,4 +87,9 @@ body {
   --color-borders: #323238;
   --color-black: #0d0d0f;
   --color-white: #fff;
+  --font-family-always: Helvetica, Arial, sans-serif;
+  --font-weight-text: 400;
+  --font-weight-title: 700;
+  --font-text-size: 18px;
+  --font-title-size: 28px;
 }
