@@ -2,7 +2,7 @@
 CSS FILE FOR ALL WOOD PROJECT
 */
 body {
-  background-color: #1a1615;
+  background-color: var(--color-shape);
 }
 .page {
   width: 100vw;
@@ -21,33 +21,51 @@ body {
   width: 70%;
   height: auto;
   margin: 0 auto;
-  background-color: black;
-  opacity: 55%;
+  background-color: var(--color-black);
   margin-top: -10px;
-  box-shadow: 0.1px 0.2px 5px 2px #300c38;
+  box-shadow: 0.1px 0.2px 5px 2px var(--color-borders);
 }
 
 .titleBody {
   height: 2vw;
   width: 100%;
-  color: white;
+  color: var(--color-text);
   margin: 0 auto;
   text-align: center;
   justify-content: center;
 }
 .contentLeft {
-  color: white;
+  color: var(--color-text);
   margin-top: 3rem;
   width: 45%;
   margin-left: 10px;
   text-align: justify;
 }
 .contentRight {
-  color: white;
+  color: var(--color-text);
   margin-inline-start: auto;
   margin-top: 3rem;
   width: 45%;
   margin-right: 10px;
   text-align: justify;
   padding-bottom: 1.5rem;
+}
+
+:root {
+  --color-background: #121214;
+  --color-green: #04d361;
+  --color-red: #e83f5b;
+  --color-orange: #fd951f;
+  --color-yellow: #f7df1e;
+  --color-primary: #8257e6;
+  --color-primary-hover: #9466ff;
+  --color-secondary: #e1e1e6;
+  --color-text: #a8a8b3;
+  --color-support: #737380;
+  --color-shape: #202024;
+  --color-shape-hover: #29292e;
+  --color-icons: #41414d;
+  --color-borders: #323238;
+  --color-black: #0d0d0f;
+  --color-white: #fff;
 }
