@@ -1,0 +1,45 @@
+/* CSS FOR FORMS */
+@import "root.css";
+.userForms {
+  width: 90%;
+  box-shadow: 0.1px 0.2px 5px 2px var(--color-borders);
+  margin: 0 auto;
+  height: auto;
+  padding: 10px;
+  padding-bottom: 25px;
+}
+.hugInputs {
+  margin-top: 2.4rem;
+  width: 100%;
+  height: auto;
+  margin-left: 1.5rem;
+}
+.inputName {
+  font-family: var(--font-family-always);
+  color: var(--color-secondary);
+  font-weight: var(--font-weight-text);
+  font-size: var(--font-text-size);
+  margin-bottom: 0.6rem;
+}
+.inputText {
+  border-radius: 2px;
+  padding: 0 10px 0 12px;
+  color: var(--color-shape);
+  border: none;
+  font-weight: var(--font-weight-text);
+  margin: 0 auto;
+  width: 95%;
+  font-size: 15px;
+  height: 2.2rem;
+  overflow: hidden;
+}
+.buttonSuccess {
+  margin-top: 1.5rem;
+  color: var(--color-white);
+  background-color: var(--color-green);
+  font-weight: var(--font-weight-text);
+  font-size: var(--font-text-size);
+  border-radius: 0.5rem;
+  width: 10rem;
+  height: 3.5rem;
+}
