@@ -42,12 +42,12 @@ body {
 }
 .userProps {
   display: flex;
-  width: 50%;
+  width: 70%;
   margin-left: auto;
 }
 .userNav-item {
   height: 100%;
-  width: 40%;
+  width: 50%;
   font-size: 1.3rem;
   color: var(--color-white);
   align-items: center;
