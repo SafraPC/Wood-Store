@@ -26,7 +26,6 @@
   margin-top: 2.4rem;
   width: 100%;
   height: auto;
-  margin-left: 1.5rem;
 }
 .inputName {
   font-family: var(--font-family-always);
@@ -54,7 +53,7 @@
   border: none;
   font-weight: var(--font-weight-text);
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   font-size: 15px;
   height: 2.2rem;
   overflow: hidden;
