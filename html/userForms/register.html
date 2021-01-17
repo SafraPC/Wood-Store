@@ -29,19 +29,26 @@
             </h6>
             <input
               type="text"
+              id="name"
               class="inputText"
               placeholder="Insira seu nome e Sobrenome:"
             />
           </div>
           <div class="hugInputs">
             <h6 class="inputName">CPF : <span class="necessary">*</span></h6>
-            <input type="text" class="inputText" placeholder="Insira seu CPF" />
+            <input
+              type="text"
+              class="inputText"
+              placeholder="Insira seu CPF"
+              id="cpf"
+            />
           </div>
           <div class="hugInputs">
             <h6 class="inputName">
               Data de Nascimento : <span class="necessary">*</span>
             </h6>
             <input
+              id="dataNasc"
               type="text"
               class="inputText"
               placeholder="Insira sua data de Nascimento:"
@@ -51,6 +58,7 @@
             <h6 class="inputName">Email : <span class="necessary">*</span></h6>
             <input
               type="email"
+              id="email"
               class="inputText"
               placeholder="Insira seu Email:"
             />
@@ -61,6 +69,7 @@
               <span class="necessary">*</span>
             </h6>
             <input
+              id="password"
               type="password"
               class="inputText"
               placeholder="Insira sua Senha:"
@@ -72,18 +81,25 @@
             </h6>
             <input
               type="password"
+              id="otherPassword"
               class="inputText"
               placeholder="Favor Inserir usa senha Novamente :"
             />
           </div>
           <div class="contentCenter">
-            <button type="submit" class="buttonSuccess">Enviar</button>
+            <button
+              type="submit"
+              class="buttonSuccess"
+              onClick="handleFormSubmit()"
+            >
+              Enviar
+            </button>
           </div>
         </div>
       </div>
     </div>
     <!-- Script of Page -->
     <!-- JS FILE -->
-    <script src="../../js/index.js"></script>
+    <script src="../../js/userForms.js"></script>
   </body>
 </html>
