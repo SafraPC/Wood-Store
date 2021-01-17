@@ -42,4 +42,9 @@
   border-radius: 0.5rem;
   width: 10rem;
   height: 3.5rem;
+  transition: background-color 0.5s ease-in-out;
+}
+.buttonSuccess:hover {
+  background-color: var(--color-shape);
+  cursor: pointer;
 }

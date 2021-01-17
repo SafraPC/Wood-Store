@@ -40,11 +40,7 @@ body {
   justify-content: center;
   text-decoration: none;
 }
-.userProps {
-  display: flex;
-  width: 70%;
-  margin-left: auto;
-}
+
 .userNav-item {
   height: 100%;
   width: 50%;
@@ -52,13 +48,24 @@ body {
   color: var(--color-white);
   align-items: center;
   display: flex;
-
   justify-content: center;
   text-decoration: none;
 }
 
+.userProps {
+  display: flex;
+  width: 70%;
+  margin-left: auto;
+}
+.userNav-item:hover {
+  cursor: pointer;
+  border-left: 1px solid var(--color-primary-hover);
+  border-right: 1px solid var(--color-primary-hover);
+}
 .nav-item:hover {
   cursor: pointer;
+  border-left: 1px solid var(--color-primary-hover);
+  border-right: 1px solid var(--color-primary-hover);
 }
 
 ::-webkit-scrollbar {
