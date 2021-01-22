@@ -62,18 +62,110 @@
   width: 80%;
   margin: 0 auto;
 }
-.buttonSuccess {
-  margin-top: 1.5rem;
+
+/*
+Buttons down Here
+*/
+.dangerButton {
+  border: 1px solid var(--color-bgdark);
+  background-color: var(--color-soft-red);
+  padding: 8px 12px;
   color: var(--color-white);
-  background-color: var(--color-green);
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+  margin: 5px 0;
+  font-size: 15px;
   font-weight: var(--font-weight-text);
-  font-size: var(--font-text-size);
-  border-radius: 0.5rem;
-  width: 10rem;
-  height: 3.5rem;
-  transition: background-color 0.5s ease-in-out;
 }
-.buttonSuccess:hover {
-  background-color: var(--color-shape);
-  cursor: pointer;
+
+.dangerButton:hover {
+  background-color: var(--color-high-red);
 }
+
+.warningButton {
+  border: 1px solid var(--color-bgdark);
+  background-color: var(--color-high-yellow);
+  padding: 8px 12px;
+  color: var(--color-white);
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+  margin: 5px 0;
+  font-size: 15px;
+  font-weight: var(--font-weight-text);
+}
+
+.warningButton:hover {
+  background-color: var(--color-soft-yellow);
+}
+
+.successButton {
+  border: 1px solid var(--color-bgdark);
+  background-color: var(--color-soft-green);
+  padding: 8px 12px;
+  color: var(--color-white);
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+  margin: 5px 0;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: var(--font-weight-text);
+}
+
+.successButton:hover {
+  background-color: var(--color-high-green);
+}
+
+.outlineDanger {
+  border: 1px solid var(--color-soft-red);
+  padding: 8px 12px;
+  color: var(--color-soft-red);
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+  margin: 5px 0;
+  background-color: transparent;
+  font-size: 15px;
+  background-color: transparent;
+  font-weight: var(--font-weight-text);
+}
+
+.outlineDanger:hover {
+  background-color: var(--color-high-red);
+  color: var(--color-white);
+}
+
+.outlineWarning {
+  border: 1px solid var(--color-soft-yellow);
+  padding: 8px 12px;
+  background-color: transparent;
+  color: var(--color-soft-yellow);
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+  margin: 5px 0;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: var(--font-weight-text);
+}
+
+.outlineWarning:hover {
+  background-color: var(--color-soft-yellow);
+  color: var(--color-white);
+}
+.outlineSuccess {
+  border: 1px solid var(--color-soft-green);
+  padding: 8px 12px;
+  color: var(--color-soft-green);
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+  margin: 5px 0;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: var(--font-weight-text);
+}
+
+.outlineSuccess:hover {
+  background-color: var(--color-high-green);
+  color: var(--color-white);
+}
+/*
+End of buttons
+*/
