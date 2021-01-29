@@ -2,49 +2,82 @@
 @import "root.css";
 
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
-	width: 100vw;
-	height: 80px;
-	border-radius: 0.3rem;
-	background-color: var(--color-primary);
+  width: auto;
+  height: 80px;
+  display: flex;
+  border-radius: 0.3rem;
+  background-color: var(--color-primary);
+  overflow: hidden;
 }
 
+.nav-ico {
+  height: 100%;
+  width: 25%;
+  display: flex;
+}
 .nav {
-	height: 100%;
-	width: 70%;
-	display: flex;
-	margin: 0 auto;
+  height: 100%;
+  width: 50%;
+  display: flex;
+}
+.userNav {
+  height: 100%;
+  width: 25%;
+  display: flex;
 }
 .nav-item {
-	height: 100%;
-	width: 33%;
-	font-size: 1.3rem;
-	color: var(--color-white);
-	align-items: center;
-	display: flex;
-	justify-content: center;
-	text-decoration: none;
+  height: 100%;
+  width: 33%;
+  font-size: 1.3rem;
+  color: var(--color-white);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+}
+
+.userNav-item {
+  height: 100%;
+  width: 50%;
+  font-size: 1.3rem;
+  color: var(--color-white);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+}
+
+.userProps {
+  display: flex;
+  width: 70%;
+  margin-left: auto;
+}
+.userNav-item:hover {
+  cursor: pointer;
+  background-color: var(--color-primary-hover);
 }
 .nav-item:hover {
-	border-left: 0.01px solid var(--color-primary-hover);
-	border-right: 0.01px solid var(--color-primary-hover);
-	cursor: pointer;
+  cursor: pointer;
+  background-color: var(--color-primary-hover);
 }
 
 ::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-	display: none;
+  display: none;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	display: none;
+  display: none;
 }
