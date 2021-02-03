@@ -16,9 +16,6 @@ body {
   background-color: var(--color-shape);
 }
 
-.page {
-}
-
 .iFrameHeader {
   width: 95%;
   height: 80px;
@@ -87,4 +84,11 @@ body {
   font-family: var(--font-family-always);
   font-weight: var(--font-weight-text);
   font-size: var(--font-text-size);
+}
+
+/*CSS RESPONSIVE FILE*/
+@media screen and (max-width: 1096px) {
+  .iFrameHeader {
+    height: 24rem;
+  }
 }
