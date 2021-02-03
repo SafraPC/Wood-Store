@@ -108,14 +108,16 @@ body {
   .nav-item {
     margin: 0 auto;
     width: 100%;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     align-items: center;
     flex-direction: column;
   }
 
   .userNav-item {
     margin: 0 auto;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     flex-direction: column;
     width: 100%;
   }
