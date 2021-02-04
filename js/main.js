@@ -1,16 +1,10 @@
-import {teste}from'./modules/header.js'
-let val = teste;
-
-// const getHambuguer = document.querySelector(".dropDown");
-// function testeOi(){
-//     alert(val);
-// }
-// getHambuguer.addEventListener("click",testeOi);
+import {teste}from './index.js'
 const iFrame = document.getElementById("iFrame");
+console.log(iFrame);
 const hamburguer = iFrame.contentWindow.document.getElementById("hamburguer");
 console.log(hamburguer);
 function testeOi(){
-    console.log(val);
+    console.log("oi");
 }
 hamburguer.addEventListener("click",testeOi);
 // hamburguer.onClick = testeOi;
