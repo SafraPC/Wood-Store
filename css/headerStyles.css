@@ -18,12 +18,16 @@ body {
 
 .nav {
   height: 100%;
-  width: 50%;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
   display: flex;
 }
 .userNav {
+  padding: 0;
   height: 100%;
-  width: 25%;
+  width: 20%;
+
   display: flex;
 }
 .dropDown {
@@ -31,11 +35,12 @@ body {
 }
 .nav-item {
   height: 100%;
-  width: 35%;
+  width: 100%;
   font-size: 1.2rem;
   color: var(--color-white);
   align-items: center;
   display: flex;
+  margin: 0 auto;
   justify-content: center;
   text-decoration: none;
   transition: background-color 0.5s ease;
@@ -52,19 +57,19 @@ body {
 }
 .userNav-item {
   height: 100%;
-  width: 50%;
+  width: 100%;
   font-size: 1.3rem;
   color: var(--color-white);
   align-items: center;
   display: flex;
   justify-content: center;
   text-decoration: none;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.9s ease;
 }
 
 .userProps {
   display: flex;
-  width: 70%;
+  width: 100%;
   margin-left: auto;
 }
 
