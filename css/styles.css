@@ -85,10 +85,9 @@ body {
   font-weight: var(--font-weight-text);
   font-size: var(--font-text-size);
 }
-
 /*CSS RESPONSIVE FILE*/
-@media screen and (max-width: 1096px) {
+/* @media screen and (max-width: 1096px) {
   .iFrameHeader {
     height: 24rem;
   }
-}
+} */
