@@ -1,10 +1,18 @@
 import {teste}from './index.js'
 const iFrame = document.getElementById("iFrame");
-console.log(iFrame);
+const getIframe = document.getElementById("iFrame");
+const getHeader = iFrame.contentWindow.document.getElementById("getHeader");
 const hamburguer = iFrame.contentWindow.document.getElementById("hamburguer");
-console.log(hamburguer);
-function testeOi(){
-    console.log("oi");
-}
-hamburguer.addEventListener("click",testeOi);
+    function TurnHeader(){
+        if(getHeader.style.display==="none"){
+            getHeader.style.display="flex";
+            getIframe.style.height="24rem";
+        }else{
+            getIframe.style.height="84px";
+            getHeader.style.display="none";
+        }
+    }
+
+    
+hamburguer.addEventListener("click",TurnHeader);
 // hamburguer.onClick = testeOi;
