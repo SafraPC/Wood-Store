@@ -1,161 +1,68 @@
-/* width */
-@import "root.css";
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.header {
-  width: auto;
-  height: 80px;
+nav {
   display: flex;
-  border-radius: 0.3rem;
-  background-color: var(--color-primary);
-  overflow: hidden;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background: #191136;
+  font-family: Helvetica;
+}
+.logo {
+  color: rgb(226, 226, 266);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+.nav-links {
+  display: flex;
+  width: 30%;
   justify-content: space-around;
 }
-
-.nav {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0 auto;
-  display: flex;
+.nav-links li {
+  list-style: none;
 }
-.userNav {
-  padding: 0;
-  height: 100%;
-  width: 20%;
-
-  display: flex;
+.nav-links a {
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 14px;
 }
-.dropDown {
+.burger {
   display: none;
+  cursor: pointer;
 }
-.nav-item {
-  height: 100%;
-  width: 100%;
-  font-size: 1.2rem;
-  color: var(--color-white);
-  align-items: center;
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  text-decoration: none;
-  transition: background-color 0.5s ease;
-}
-.getHeader {
-  width: 100%;
-  display: flex;
-  height: 80px;
-  display: flex;
-  border-radius: 0.3rem;
-  background-color: var(--color-primary);
-  overflow: hidden;
-  justify-content: space-around;
-}
-.userNav-item {
-  height: 100%;
-  width: 100%;
-  font-size: 1.3rem;
-  color: var(--color-white);
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  transition: background-color 0.9s ease;
-}
-
-.userProps {
-  display: flex;
-  width: 100%;
-  margin-left: auto;
-}
-
-.getHeader.active {
-  display: flex;
-  height: 24rem;
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  transition: all 0.5s;
 }
 
 @media screen and (max-width: 1024px) {
-  .getHeader {
-    display: none;
+  .nav-links {
+    width: 60%;
   }
-  .dropDown {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    width: 100%;
-    display: block;
-    height: 38px;
-  }
-  .dropDown img {
-    cursor: pointer;
-    height: 35px;
-    width: 35px;
-    float: right;
-    margin-right: 1rem;
-  }
-  .header {
-    height: auto;
-    background-color: var(--color-primary);
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 98vh;
+    top: 8vh;
+    background: #191136;
     display: flex;
     flex-direction: column;
-  }
-  .getHeader {
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .nav {
-    margin: 0 auto;
-    width: 100%;
-    flex-direction: column;
-  }
-  .userNav {
-    margin: 0 auto;
-    padding-top: 1rem;
-    width: 100%;
-    flex-direction: column;
-  }
-  .nav-item {
-    margin: 0 auto;
-    width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     align-items: center;
-    flex-direction: column;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.7s ease-in;
   }
-
-  .userNav-item {
-    margin: 0 auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    flex-direction: column;
-    width: 100%;
+  .burger {
+    display: block;
   }
 }
 
-.userNav-item:hover {
-  cursor: pointer;
-  background-color: var(--color-primary-hover);
-}
-.nav-item:hover {
-  cursor: pointer;
-  background-color: var(--color-primary-hover);
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  display: none;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  display: none;
+.nav-active {
+  transform: translateX(0%);
 }
