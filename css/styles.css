@@ -34,6 +34,7 @@ body {
   margin: 0 auto 15px auto;
   background-color: var(--color-black);
   box-shadow: 0.1px 0.2px 5px 2px var(--color-borders);
+  margin-top: 1rem;
 }
 
 .titleBody {

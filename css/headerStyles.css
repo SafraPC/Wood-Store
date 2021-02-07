@@ -4,14 +4,16 @@
   align-items: center;
   height: 80px;
   background-color: var(--color-primary);
-  font-family: Helvetica;
+  font-family: var(--font-family-always);
+  font-weight: var(--font-weight-text);
   border-radius: 0.3rem;
 }
 .logo {
-  color: rgb(226, 226, 266);
   text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 20px;
+  color: var(--color-white);
+  letter-spacing: 4px;
+  font-weight: var(--font-title-text);
+  font-size: 18px;
 }
 
 .nav-item {
@@ -48,6 +50,9 @@
   justify-content: center;
   text-align: center;
   align-items: center;
+  cursor: pointer;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
 }
 .item:hover {
   background-color: var(--color-primary-hover);
@@ -71,25 +76,53 @@
   } */
 /* } */
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1070px) {
   .nav-item {
-    position: absolute;
-    right: 0px;
-    height: 98vh;
-    top: 8vh;
-    background: #191136;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.7s ease-in;
+    width: 45%;
   }
-  .burger {
-    display: block;
+  .nav-lr {
+    width: 20%;
   }
-}
+  .item {
+    width: 100%;
+  }
 
-.nav-active {
-  transform: translateX(0%);
+  @media screen and (max-width: 920px) {
+    .nav {
+      display: flex;
+    }
+    .nav-item {
+      position: absolute;
+      right: 0px;
+      height: 10.5rem;
+      top: 5rem;
+      background: var(--color-primary);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      transform: translateX(100%);
+      transition: transform 0.7s ease-in;
+    }
+    .nav-lr {
+      position: absolute;
+      right: 0px;
+      height: 6.8rem;
+      top: 15.5rem;
+      background: var(--color-primary);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      transform: translateX(100%);
+      transition: transform 0.7s ease-in;
+    }
+    .burger {
+      display: block;
+    }
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
 }

@@ -7,13 +7,13 @@ template.innerHTML=`
         <h4>Wood-Store</h4>
     </div>
     <div class="nav-item">
-        <div class="item">Produtos</div>
-        <div class="item">Quem Somos</div>
-        <div class="item">Ajuda</div>
+        <a class="item"><div>Produtos</div></a>
+        <a class="item"><div>Quem Somos</div></a>
+        <a class="item"><div>Ajuda</div></a>
     </div>
     <div class="nav-lr">
-        <div class="item">Login</div>
-        <div class="item">Register</div>
+        <a class="item"><div >Login</div></a>
+        <a class="item"><div >Register</div></a>
     </div>
     <div class="burger"">
         <div></div>
@@ -29,17 +29,19 @@ template.innerHTML=`
             this.shadowRoot.appendChild(template.content);
         }
     
-        handleClick(burguer, nav) {
+        handleClick(burguer, nav,userNav) {
             burguer.addEventListener("click", () => {
                 console.log("clicou");
                 nav.classList.toggle("nav-active");
+                userNav.classList.toggle("nav-active");
             });
         }
     
         connectedCallback() {
             const burguer = this.shadowRoot.querySelector(".burger");
             const nav = this.shadowRoot.querySelector(".nav-item");
-            this.handleClick(burguer, nav);
+            const navTwo = this.shadowRoot.querySelector(".nav-lr");
+            this.handleClick(burguer, nav,navTwo);
         }
     }
     
