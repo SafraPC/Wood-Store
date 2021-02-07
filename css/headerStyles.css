@@ -1,10 +1,11 @@
-nav {
+.nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
-  background: #191136;
+  height: 80px;
+  background-color: var(--color-primary);
   font-family: Helvetica;
+  border-radius: 0.3rem;
 }
 .logo {
   color: rgb(226, 226, 266);
@@ -12,20 +13,46 @@ nav {
   letter-spacing: 5px;
   font-size: 20px;
 }
-.nav-links {
+
+.nav-item {
+  width: 35%;
+  height: 100%;
   display: flex;
-  width: 30%;
-  justify-content: space-around;
-}
-.nav-links li {
-  list-style: none;
-}
-.nav-links a {
-  color: rgb(226, 226, 226);
+  color: var(--color-white);
   text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   letter-spacing: 3px;
   font-size: 14px;
 }
+
+.nav-lr {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  color: var(--color-white);
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.item {
+  border-radius: 0.3rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.item:hover {
+  background-color: var(--color-primary-hover);
+}
+
 .burger {
   display: none;
   cursor: pointer;
@@ -38,14 +65,14 @@ nav {
   transition: all 0.5s;
 }
 
-@media screen and (max-width: 1024px) {
-  .nav-links {
-    width: 60%;
-  }
-}
+/* @media screen and (max-width: 1024px) {
+  .nav-item {
+    width: 50%;
+  } */
+/* } */
 
-@media screen and (max-width: 768px) {
-  .nav-links {
+@media screen and (max-width: 860px) {
+  .nav-item {
     position: absolute;
     right: 0px;
     height: 98vh;

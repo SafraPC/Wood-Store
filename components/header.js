@@ -2,22 +2,25 @@ const template = document.createElement("template");
 template.innerHTML=`
 <link rel="stylesheet" href="../css/headerStyles.css" />
 <link rel="stylesheet" href="./components/header-styles.css" />
-<nav>
+<div class ="nav">
     <div class="logo">
         <h4>Wood-Store</h4>
     </div>
-    <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Projects</a></li>
-    </ul>
-    <div class="burger"">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+    <div class="nav-item">
+        <div class="item">Produtos</div>
+        <div class="item">Quem Somos</div>
+        <div class="item">Ajuda</div>
     </div>
-</nav>`;
+    <div class="nav-lr">
+        <div class="item">Login</div>
+        <div class="item">Register</div>
+    </div>
+    <div class="burger"">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>`;
     
     class Header extends HTMLElement {
         shadowRoot = this.attachShadow({ mode: "open" });
@@ -35,7 +38,7 @@ template.innerHTML=`
     
         connectedCallback() {
             const burguer = this.shadowRoot.querySelector(".burger");
-            const nav = this.shadowRoot.querySelector(".nav-links");
+            const nav = this.shadowRoot.querySelector(".nav-item");
             this.handleClick(burguer, nav);
         }
     }
