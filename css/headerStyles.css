@@ -43,7 +43,9 @@
 }
 
 .item {
+  text-decoration: none;
   border-radius: 0.3rem;
+  color: var(--color-white);
   width: 50%;
   height: 100%;
   display: flex;
@@ -70,12 +72,6 @@
   transition: all 0.5s;
 }
 
-/* @media screen and (max-width: 1024px) {
-  .nav-item {
-    width: 50%;
-  } */
-/* } */
-
 @media screen and (max-width: 1070px) {
   .nav-item {
     width: 45%;
@@ -92,10 +88,11 @@
       display: flex;
     }
     .nav-item {
+      border-radius: 0.3rem;
       position: absolute;
       right: 0px;
-      height: 10.5rem;
-      top: 5rem;
+      height: 10.4rem;
+      top: 4.7rem;
       background: var(--color-primary);
       display: flex;
       flex-direction: column;
@@ -105,10 +102,11 @@
       transition: transform 0.7s ease-in;
     }
     .nav-lr {
+      border-radius: 0.3rem;
       position: absolute;
       right: 0px;
       height: 6.8rem;
-      top: 15.5rem;
+      top: 14.9rem;
       background: var(--color-primary);
       display: flex;
       flex-direction: column;
