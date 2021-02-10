@@ -89,7 +89,7 @@
     }
     .nav-item {
       border-radius: 0.3rem;
-      position: absolute;
+      position: fixed;
       right: 0px;
       height: 10.4rem;
       top: 4.7rem;
@@ -103,7 +103,7 @@
     }
     .nav-lr {
       border-radius: 0.3rem;
-      position: absolute;
+      position: fixed;
       right: 0px;
       height: 6.8rem;
       top: 14.9rem;
