@@ -88,8 +88,12 @@ body {
   font-size: var(--font-text-size);
 }
 /*CSS RESPONSIVE FILE*/
-/* @media screen and (max-width: 1096px) {
+@media screen and (max-width: 1096px) {
+  .page {
+    overflow-x: hidden;
+    position: relative;
+  }
   .iFrameHeader {
     height: 24rem;
   }
-} */
+}
