@@ -7,6 +7,8 @@
   font-family: var(--font-family-always);
   font-weight: var(--font-weight-text);
   border-radius: 0.3rem;
+  position: sticky;
+  top: 0;
 }
 .logo {
   text-transform: uppercase;

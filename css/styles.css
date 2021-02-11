@@ -14,16 +14,17 @@ CSS FILE FOR ALL WOOD PROJECT
 
 body {
   background-color: var(--color-shape);
-  overflow-x: hidden;
 }
 
 .iFrameHeader {
   width: 95%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   height: 80px;
   border: none;
   display: block;
   margin: 0 auto 15px auto;
-  overflow: hidden;
 }
 
 .pageBody {
@@ -87,7 +88,6 @@ body {
 /*CSS RESPONSIVE FILE*/
 @media screen and (max-width: 1096px) {
   .page {
-    overflow-x: hidden;
     position: relative;
   }
 
@@ -111,11 +111,15 @@ body {
   }
   .iFrameHeader {
     height: 24rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
 }
 
 @media screen and (max-width: 550px) {
   .titleBody {
-    font-size: 1.3rem;
+    padding: 1rem;
+    font-size: 0.9rem;
   }
 }
