@@ -34,6 +34,7 @@
   font-size: var(--font-text-size);
   margin-bottom: 0.6rem;
 }
+
 .inputText {
   border-radius: 2px;
   padding: 0 10px 0 12px;
@@ -53,7 +54,7 @@
   border: none;
   font-weight: var(--font-weight-text);
   margin: 0 auto;
-  width: 100%;
+  width: 70%;
   font-size: 15px;
   height: 2.2rem;
   overflow: hidden;
@@ -160,6 +161,7 @@ Buttons down Here
   background-color: transparent;
   font-size: 15px;
   font-weight: var(--font-weight-text);
+  margin-top: 1.67rem;
 }
 
 .outlineSuccess:hover {
