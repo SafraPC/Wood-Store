@@ -54,29 +54,32 @@
   border: none;
   font-weight: var(--font-weight-text);
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
   font-size: 15px;
   height: 2.2rem;
   overflow: hidden;
 }
 .centeredDiv {
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
   margin: 0 auto;
+  padding: 0.5rem 1rem 2rem 1rem;
 }
 
 /*
 Buttons down Here
 */
 .dangerButton {
-  border: 1px solid var(--color-bgdark);
-  background-color: var(--color-soft-red);
-  padding: 8px 12px;
-  color: var(--color-white);
+  padding: 10px 1.7rem;
   border-radius: 5px;
   transition: background-color 0.5s ease;
-  margin: 5px 0;
+  background-color: transparent;
   font-size: 15px;
   font-weight: var(--font-weight-text);
+  cursor: pointer;
+  background-color: var(--color-soft-red);
+  color: var(--color-white);
 }
 
 .dangerButton:hover {
@@ -84,15 +87,15 @@ Buttons down Here
 }
 
 .warningButton {
-  border: 1px solid var(--color-bgdark);
-  background-color: var(--color-high-yellow);
-  padding: 8px 12px;
-  color: var(--color-white);
+  padding: 10px 1.7rem;
   border-radius: 5px;
   transition: background-color 0.5s ease;
-  margin: 5px 0;
+  background-color: transparent;
   font-size: 15px;
   font-weight: var(--font-weight-text);
+  cursor: pointer;
+  background-color: var(--color-high-yellow);
+  color: var(--color-white);
 }
 
 .warningButton:hover {
@@ -100,16 +103,8 @@ Buttons down Here
 }
 
 .successButton {
-  border: 1px solid var(--color-bgdark);
   background-color: var(--color-soft-green);
-  padding: 8px 12px;
   color: var(--color-white);
-  border-radius: 5px;
-  transition: background-color 0.5s ease;
-  margin: 5px 0;
-  background-color: transparent;
-  font-size: 15px;
-  font-weight: var(--font-weight-text);
 }
 
 .successButton:hover {
@@ -117,16 +112,15 @@ Buttons down Here
 }
 
 .outlineDanger {
-  border: 1px solid var(--color-soft-red);
-  padding: 8px 12px;
-  color: var(--color-soft-red);
+  padding: 10px 1.7rem;
   border-radius: 5px;
   transition: background-color 0.5s ease;
-  margin: 5px 0;
   background-color: transparent;
   font-size: 15px;
-  background-color: transparent;
   font-weight: var(--font-weight-text);
+  cursor: pointer;
+  border: 1px solid var(--color-soft-red);
+  color: var(--color-soft-red);
 }
 
 .outlineDanger:hover {
@@ -135,16 +129,15 @@ Buttons down Here
 }
 
 .outlineWarning {
-  border: 1px solid var(--color-soft-yellow);
-  padding: 8px 12px;
-  background-color: transparent;
-  color: var(--color-soft-yellow);
+  padding: 10px 1.7rem;
   border-radius: 5px;
   transition: background-color 0.5s ease;
-  margin: 5px 0;
   background-color: transparent;
   font-size: 15px;
   font-weight: var(--font-weight-text);
+  cursor: pointer;
+  border: 1px solid var(--color-soft-yellow);
+  color: var(--color-soft-yellow);
 }
 
 .outlineWarning:hover {
@@ -152,22 +145,23 @@ Buttons down Here
   color: var(--color-white);
 }
 .outlineSuccess {
-  border: 1px solid var(--color-soft-green);
-  padding: 8px 12px;
-  color: var(--color-soft-green);
+  padding: 10px 1.7rem;
   border-radius: 5px;
   transition: background-color 0.5s ease;
-  margin: 5px 0;
   background-color: transparent;
   font-size: 15px;
   font-weight: var(--font-weight-text);
-  margin-top: 1.67rem;
+  cursor: pointer;
+  border: 1px solid var(--color-soft-green);
+  color: var(--color-soft-green);
 }
 
 .outlineSuccess:hover {
   background-color: var(--color-high-green);
   color: var(--color-white);
 }
-/*
-End of buttons
-*/
+@media screen and (max-width: 550px) {
+  .centeredDiv {
+    width: 80%;
+  }
+}
