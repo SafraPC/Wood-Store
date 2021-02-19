@@ -57,7 +57,7 @@
 .centeredDiv {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 55%;
   margin: 0 auto;
   padding: 0.5rem 1rem 2rem 1rem;
 }
@@ -155,7 +155,8 @@ Buttons down Here
   background-color: var(--color-high-green);
   color: var(--color-white);
 }
-@media screen and (max-width: 550px) {
+
+@media screen and (max-width: 1200px) {
   .centeredDiv {
     width: 80%;
   }

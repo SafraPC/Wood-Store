@@ -28,7 +28,7 @@ body {
 }
 
 .pageBody {
-  width: 70%;
+  width: 60%;
   padding-bottom: 30px;
   height: auto;
   margin: 0 auto 15px auto;
@@ -41,8 +41,7 @@ body {
   width: 100%;
   color: var(--color-secondary);
   font-family: var(--font-family-always);
-  font-weight: var(--font-weight-title);
-  font-size: var(--font-title-size);
+  font-size: 1.5rem;
   text-align: center;
   padding: 2.5rem 2rem 7px 2rem;
   justify-content: center;
@@ -91,9 +90,6 @@ body {
     position: relative;
   }
 
-  .pageBody {
-    width: 98%;
-  }
   .contentLeft {
     margin: 0 auto;
     padding: 1.5rem;
@@ -116,14 +112,15 @@ body {
     top: 0;
   }
 }
-
+@media screen and (max-width: 810px) {
+  .pageBody {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 550px) {
   .titleBody {
     padding: 2.5rem 2rem 7px 2rem;
-    font-family: var(--font-family-always);
-    color: var(--color-secondary);
-    font-weight: var(--font-weight-text);
-    font-size: var(--font-text-size);
+    font-size: 1.3rem;
     margin-bottom: 0.6rem;
   }
 }
