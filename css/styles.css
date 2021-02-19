@@ -44,7 +44,7 @@ body {
   font-weight: var(--font-weight-title);
   font-size: var(--font-title-size);
   text-align: center;
-  padding-top: 2rem;
+  padding: 2.5rem 2rem 7px 2rem;
   justify-content: center;
 }
 .contentLeft {

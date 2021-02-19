@@ -20,13 +20,8 @@
   margin-top: 2.4rem;
   width: 100%;
   height: auto;
-  margin-left: 1.5rem;
 }
-.hugInputsLittle {
-  margin-top: 2.4rem;
-  width: 100%;
-  height: auto;
-}
+
 .inputName {
   font-family: var(--font-family-always);
   color: var(--color-secondary);
