@@ -1,5 +1,5 @@
 const template = document.createElement("template");
-template.innerHTML=`
+template.innerHTML = `
 <link rel="stylesheet" href="../../css/headerStyles.css" />
 <div class ="nav">
     <div class="logo">
@@ -20,29 +20,29 @@ template.innerHTML=`
         <div></div>
     </div>
 </div>`;
-    
-    class Header extends HTMLElement {
-        shadowRoot = this.attachShadow({ mode: "open" });
-        constructor() {
-            super();
-            this.shadowRoot.appendChild(template.content);
-        }
-    
-        handleClick(burguer, nav,userNav) {
-            burguer.addEventListener("click", () => {
-                console.log("clicou");
-                nav.classList.toggle("nav-active");
-                userNav.classList.toggle("nav-active");
-            });
-        }
-    
-        connectedCallback() {
-            const burguer = this.shadowRoot.querySelector(".burger");
-            const nav = this.shadowRoot.querySelector(".nav-item");
-            const navTwo = this.shadowRoot.querySelector(".nav-lr");
-            
-            this.handleClick(burguer, nav,navTwo);
-        }
-    }
-    
-    customElements.define("header-component", Header);
+
+class Header extends HTMLElement {
+	shadowRoot = this.attachShadow({ mode: "open" });
+	constructor() {
+		super();
+		this.shadowRoot.appendChild(template.content);
+	}
+
+	handleClick(burguer, nav, userNav) {
+		burguer.addEventListener("click", () => {
+			console.log("clicou");
+			nav.classList.toggle("nav-active");
+			userNav.classList.toggle("nav-active");
+		});
+	}
+
+	connectedCallback() {
+		const burguer = this.shadowRoot.querySelector(".burger");
+		const nav = this.shadowRoot.querySelector(".nav-item");
+		const navTwo = this.shadowRoot.querySelector(".nav-lr");
+
+		this.handleClick(burguer, nav, navTwo);
+	}
+}
+
+customElements.define("header-component", Header);
