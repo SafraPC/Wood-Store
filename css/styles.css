@@ -18,32 +18,32 @@ body {
 
 .iFrameHeader {
   width: 95%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   height: 80px;
   border: none;
   display: block;
   margin: 0 auto 15px auto;
-  overflow: hidden;
 }
 
 .pageBody {
-  max-width: 100vw;
-  max-height: 100vw;
-  width: 70%;
+  width: 60%;
   padding-bottom: 30px;
   height: auto;
   margin: 0 auto 15px auto;
   background-color: var(--color-black);
   box-shadow: 0.1px 0.2px 5px 2px var(--color-borders);
+  margin-top: 1rem;
 }
 
 .titleBody {
   width: 100%;
   color: var(--color-secondary);
   font-family: var(--font-family-always);
-  font-weight: var(--font-weight-title);
-  font-size: var(--font-title-size);
-  line-height: 5rem;
+  font-size: 1.5rem;
   text-align: center;
+  padding: 2.5rem 2rem 7px 2rem;
   justify-content: center;
 }
 .contentLeft {
@@ -75,7 +75,6 @@ body {
   font-family: var(--font-family-always);
   font-weight: var(--font-weight-text);
   font-size: var(--font-text-size);
-  line-height: 5rem;
   text-align: center;
   justify-content: center;
 }
@@ -86,8 +85,42 @@ body {
   font-size: var(--font-text-size);
 }
 /*CSS RESPONSIVE FILE*/
-/* @media screen and (max-width: 1096px) {
+@media screen and (max-width: 1096px) {
+  .page {
+    position: relative;
+  }
+
+  .contentLeft {
+    margin: 0 auto;
+    padding: 1.5rem;
+    width: 95%;
+  }
+  .contentRight {
+    margin: 0 auto;
+    padding: 1.5rem;
+    width: 95%;
+  }
+  .contentCenter {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 95%;
+  }
   .iFrameHeader {
     height: 24rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
-} */
+}
+@media screen and (max-width: 810px) {
+  .pageBody {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .titleBody {
+    padding: 2.5rem 2rem 7px 2rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+  }
+}
