@@ -1,3 +1,14 @@
 .footer {
-  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: var(--color-black);
+  font-family: var(--font-family-always);
+  font-weight: var(--font-weight-text);
+  border-radius: 0.3rem;
+
+  color: var(--color-white);
+  font-weight: var(--font-title-text);
+  padding: 0px 1rem 0px 1rem;
 }

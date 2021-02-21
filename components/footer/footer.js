@@ -1,8 +1,8 @@
 const templateFooter = document.createElement("template");
 templateFooter.innerHTML = `
 <link rel="stylesheet" href="../../css/footer.css" />
-<footer class ="nav">
-    <h2>Todos os diretos reservados &copy - Leandro Safra</h2>
+<footer class ="footer">
+    <span>Todos os diretos reservados &copy - Leandro Safra</span>
 </footer>`;
 
 class Footer extends HTMLElement {
