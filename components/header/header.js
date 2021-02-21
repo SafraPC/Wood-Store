@@ -11,8 +11,8 @@ template.innerHTML = `
         <a class="item" href="../html/ajuda.html"><div>Ajuda</div></a>
     </div>
     <div class="nav-lr">
-        <a class="item" href="/html/login.html"><div >Login</div></a>
-        <a class="item" href="/html/register.html"><div >Register</div></a>
+        <a class="item" href="/html/login.html"><div >Logar</div></a>
+        <a class="item" href="/html/register.html"><div >Cadastrar</div></a>
     </div>
     <div class="burger"">
         <div></div>
