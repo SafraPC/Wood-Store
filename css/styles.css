@@ -19,7 +19,7 @@ body {
 .page {
   position: relative !important;
   height: auto;
-  min-height: 950px;
+  min-height: 910px;
 }
 
 .iFrameHeader {
