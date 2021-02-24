@@ -118,6 +118,17 @@ body {
     top: 0;
   }
 }
+.link {
+  display: flex;
+  font-family: var(--font-family-always);
+  color: var(--color-soft-blue);
+  font-weight: var(--font-weight-text);
+  font-size: 14.5px;
+  font-style: italic;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 1.5rem;
+}
 @media screen and (max-width: 810px) {
   .pageBody {
     width: 90%;
