@@ -16,6 +16,12 @@ body {
   background-color: var(--color-shape);
 }
 
+.page {
+  position: relative !important;
+  height: auto;
+  min-height: 950px;
+}
+
 .iFrameHeader {
   width: 95%;
   position: -webkit-sticky;
@@ -122,5 +128,10 @@ body {
     padding: 2.5rem 2rem 7px 2rem;
     font-size: 1.3rem;
     margin-bottom: 0.6rem;
+  }
+}
+@media screen and (min-height: 1000px) {
+  .page {
+    height: 100vh;
   }
 }
