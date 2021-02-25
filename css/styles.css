@@ -19,7 +19,7 @@ body {
 .page {
   position: relative !important;
   height: auto;
-  min-height: 910px;
+  min-height: 920px;
 }
 
 .iFrameHeader {
@@ -34,6 +34,15 @@ body {
 }
 
 .pageBody {
+  width: 80%;
+  padding-bottom: 30px;
+  height: auto;
+  margin: 0 auto 15px auto;
+  background-color: var(--color-black);
+  box-shadow: 0.1px 0.2px 5px 2px var(--color-borders);
+  margin-top: 1rem;
+}
+.pageForm {
   width: 60%;
   padding-bottom: 30px;
   height: auto;
@@ -131,6 +140,9 @@ body {
 }
 @media screen and (max-width: 810px) {
   .pageBody {
+    width: 90%;
+  }
+  .pageForm {
     width: 90%;
   }
 }
