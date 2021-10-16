@@ -3,5 +3,18 @@ body{
     border:0;
     padding:0;
     margin:0;
-    background-color:azure;
+    background-color:var(--blackBlue);
+    color:var(--whiteBlack);
+}
+
+.main{
+    background-color:var(--blackPurple);
+}
+
+:root{
+    --blackBlue:#011638;
+    --blackPurple:#2E294E;
+    --purple:#8D86C9;
+    --whiteBlack:#636B61;
+    --white:#FFF8F0;
 }
