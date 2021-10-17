@@ -13,13 +13,13 @@ const header = `
 	</a>
 
     <div class="nav-item">
-        <a class="item" href="../html/produtos.html"><div>Produtos</div></a>
-        <a class="item" href="../index.html"><div>Quem Somos</div></a>
-        <a class="item" href="../html/ajuda.html"><div>Ajuda</div></a>
+        <a class="item" id="produtos" href="../html/produtos.html"><div>Produtos</div></a>
+        <a class="item" id="quem-somos" href="quemSomos.html"><div>Quem Somos?</div></a>
+        <a class="item" id="ajuda" href="../html/ajuda.html"><div>Ajuda</div></a>
     </div>
     <div class="nav-lr">
-        <a class="item" href="/html/login.html"><div >Logar</div></a>
-        <a class="item" href="/html/register.html"><div >Cadastrar</div></a>
+        <a class="item" id="login" href="/html/login.html"><div >Logar</div></a>
+        <a class="item" id="cadastrar" href="/html/register.html"><div >Cadastrar</div></a>
     </div>
     <div class="burger"">
         <div></div>
