@@ -1,0 +1,41 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": ["react", "@typescript-eslint"],
+	"rules": {
+		"no-undef": "warn",
+		"no-multiple-empty-lines": "warn",
+		"no-unused-expressions": "warn",
+		"no-void": "off",
+		"no-await-in-loop": "warn",
+		"no-console": "warn",
+		"constructor-super": "warn",
+		"no-useless-constructor": "warn",
+		"no-duplicate-case": "warn",
+		"no-duplicate-imports": "warn",
+		"no-else-return": "warn",
+		"no-empty-function": "warn",
+		"no-var": "warn",
+		"no-compare-neg-zero": "warn",
+		"no-undefined": "off",
+		"no-global-assign": "warn",
+		"eqeqeq": "warn",
+		"prefer-destructuring": "warn",
+		"no-unused-vars": "warn"
+	}
+}
