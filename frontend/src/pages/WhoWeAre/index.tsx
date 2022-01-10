@@ -1,11 +1,15 @@
 import React from "react";
+import { Footer } from "../../components/Footer";
+import { Header } from "../../components/Header";
+import { Page } from "../../components/Page";
 // import { Container } from './styles';
 
 const WhoWeAre: React.FC = () => {
 	return (
-		<div>
-			<h1>Who we are page!</h1>
-		</div>
+		<Page>
+			<Header />
+			<Footer />
+		</Page>
 	);
 };
 
