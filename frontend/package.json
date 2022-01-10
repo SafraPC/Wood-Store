@@ -52,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "@types/styled-components": "^5.1.19",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
     "@webpack-cli/generators": "^2.4.1",
