@@ -6,7 +6,7 @@ import WhoWeAre from "./pages/WhoWeAre";
 function AppRoutes() {
 	return (
 		<Routes>
-			<Route path="/" element={<WhoWeAre />} />
+			<Route path="/who-we-are" element={<WhoWeAre />} />
 			<Route path="/login" element={<Login />} />
 		</Routes>
 	);
