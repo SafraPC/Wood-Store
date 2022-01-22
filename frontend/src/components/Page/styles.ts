@@ -5,4 +5,5 @@ export const StyledPage = styled.main`
 	height: 100%;
 	width: 100%;
 	background-color: black;
+	padding: 1rem 1rem 0rem 1rem;
 `;
