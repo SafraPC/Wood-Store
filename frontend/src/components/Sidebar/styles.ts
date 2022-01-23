@@ -1,5 +1,9 @@
 import styled from "styled-components";
 import { colors } from "../../themes/colors";
+type ISideElement = {
+	filled: boolean;
+};
+
 export const StyledSidebar = styled.div`
 	height: auto;
 	width: 65px;
@@ -8,9 +12,6 @@ export const StyledSidebar = styled.div`
 	flex-direction: column;
 `;
 
-type ISideElement = {
-	filled: boolean;
-};
 export const SidebarElement = styled.section<ISideElement>`
 	width: 100%;
 	height: 50px;
@@ -28,3 +29,7 @@ export const SidebarElement = styled.section<ISideElement>`
 		color: aquamarine;
 	}
 `;
+
+export const BarElement = styled.hr``;
+
+export const StyledBottomBar = styled.div``;
