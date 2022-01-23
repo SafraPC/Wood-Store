@@ -3,10 +3,15 @@ import { Footer } from "../Footer";
 import { Sidebar } from "../Sidebar";
 import { ColumnContainer, StyledContent, StyledPage } from "./styles";
 
-const Page: React.FC = ({ children }) => {
+type IPage = {
+	children: React.ReactNode;
+	screen: string;
+};
+
+const Page = ({ screen, children }: IPage) => {
 	return (
 		<StyledPage>
-			<Sidebar />
+			<Sidebar screen={screen} />
 			<ColumnContainer>
 				<StyledContent>{children}</StyledContent>
 				<Footer />

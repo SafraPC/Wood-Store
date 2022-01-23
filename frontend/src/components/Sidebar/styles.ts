@@ -8,14 +8,23 @@ export const StyledSidebar = styled.div`
 	flex-direction: column;
 `;
 
-export const SidebarElement = styled.section`
+type ISideElement = {
+	filled: boolean;
+};
+export const SidebarElement = styled.section<ISideElement>`
 	width: 100%;
-	height: 60px;
-	padding: 0.5rem;
+	height: 50px;
+	padding: 0.3rem;
 	border-bottom: 1px solid black;
+	border-radius: 0.3rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: white;
+	color: ${({ filled }) => (filled ? "aquamarine" : "white")};
 	cursor: pointer;
+	transition: 0.2s ease;
+	:hover {
+		background-color: ${colors.softBlack1};
+		color: aquamarine;
+	}
 `;

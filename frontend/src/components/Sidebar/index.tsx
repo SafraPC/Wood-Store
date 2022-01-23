@@ -1,33 +1,49 @@
 import React from "react";
 import { useNavigate } from "react-router";
 import { SidebarElement, StyledSidebar } from "./styles";
+import {
+	AiOutlineHome,
+	AiOutlineLogin,
+	AiOutlineShoppingCart,
+} from "react-icons/ai";
 
 const SidebarUpsideElements = [
 	{
-		title: "Wood Store",
-		path: "/who-we-are",
-		icon: "Home",
+		title: "Home",
+		path: "/",
+		icon: AiOutlineHome,
+		filled: false,
 	},
 	{
 		title: "Produtos",
 		path: "/products",
-		icon: "Products",
+		icon: AiOutlineShoppingCart,
+		filled: false,
 	},
 	{
 		title: "Login",
 		path: "/login",
-		icon: "Login",
+		icon: AiOutlineLogin,
+		filled: false,
 	},
 ];
 
-const Sidebar: React.FC = () => {
+export type ISideBar = {
+	screen?: string;
+};
+
+const Sidebar = ({ screen }: ISideBar) => {
 	const navigate = useNavigate();
 
 	return (
 		<StyledSidebar>
 			{SidebarUpsideElements.map((item) => (
-				<SidebarElement key={item.path} onClick={() => navigate(item.path)}>
-					{item.title}
+				<SidebarElement
+					key={item.path}
+					onClick={() => navigate(item.path)}
+					filled={screen === item.title}
+				>
+					<item.icon size={20} />
 				</SidebarElement>
 			))}
 		</StyledSidebar>

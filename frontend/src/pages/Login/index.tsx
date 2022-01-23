@@ -5,7 +5,7 @@ import { Page } from "../../components/Page";
 
 const Login: React.FC = () => {
 	return (
-		<Page>
+		<Page screen="Login">
 			<h1>Login Page!</h1>
 		</Page>
 	);
