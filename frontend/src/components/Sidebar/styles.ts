@@ -5,7 +5,9 @@ type ISideElement = {
 };
 
 export const StyledSidebar = styled.div`
-	height: auto;
+	height: 100vh;
+	position: sticky;
+	top: 0;
 	width: 65px;
 	background-color: ${colors.backgroundHeader};
 	display: flex;
