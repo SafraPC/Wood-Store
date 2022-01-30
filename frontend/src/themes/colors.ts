@@ -10,5 +10,8 @@ export const colors = {
 	softBlack3: "#353839",
 	softBlack4: "#232b2b",
 	softBlack5: "#0e1111",
-	softWhite: "#FBFAF5",
+	softWhite1: "#FBFAF5",
+	softWhite2: "#F9F6EE",
+	softWhite3: "#F5F5DC",
+	softWhite4: "#999999",
 };

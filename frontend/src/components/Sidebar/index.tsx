@@ -11,7 +11,7 @@ import { Tooltip } from "../Tooltip";
 const SidebarUpsideElements = [
 	{
 		title: "Home",
-		path: "/",
+		path: "/who-we-are",
 		icon: AiOutlineHome,
 		filled: false,
 	},

@@ -5,7 +5,7 @@ export const StyledPage = styled.main`
 	width: 100%;
 	display: flex;
 	flex-direction: flex;
-	background-color: ${colors.softWhite};
+	background-color: ${colors.softWhite1};
 `;
 export const StyledContent = styled.div`
 	min-height: 100vh;

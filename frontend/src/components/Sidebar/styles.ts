@@ -6,29 +6,31 @@ type ISideElement = {
 
 export const StyledSidebar = styled.div`
 	height: 100vh;
+	align-items: center;
 	position: sticky;
 	top: 0;
-	width: 65px;
+	width: 80px;
 	background-color: ${colors.backgroundHeader};
 	display: flex;
 	flex-direction: column;
 `;
 
 export const SidebarElement = styled.section<ISideElement>`
-	width: 100%;
-	height: 50px;
-	padding: 0.3rem;
-	border-bottom: 1px solid black;
-	border-radius: 0.3rem;
+	padding: 0.7rem;
+	margin-top: 0.5rem;
+	width: 70%;
+	border-radius: 0.7rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: ${({ filled }) => (filled ? "aquamarine" : "white")};
+	color: ${({ filled }) =>
+		filled ? `${colors.softWhite1}` : `${colors.softWhite4}`};
 	cursor: pointer;
+	background-color: ${({ filled }) => (filled ? `${colors.softBlack3}` : null)};
 	transition: 0.2s ease;
 	:hover {
-		background-color: ${colors.softBlack1};
-		color: aquamarine;
+		color: ${colors.softWhite1};
+		background-color: ${colors.softBlack3};
 		> div {
 			display: block;
 		}
