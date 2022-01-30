@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router";
 import { SidebarElement, StyledSidebar } from "./styles";
 import {
@@ -33,15 +33,8 @@ type ISideBar = {
 	screen?: string;
 };
 
-type ITooltipSelected = {
-	tooltipSelected?: string;
-	show: boolean;
-};
 const Sidebar = ({ screen }: ISideBar) => {
 	const navigate = useNavigate();
-	const [showTooltip, setShowTooltip] = useState<ITooltipSelected>({
-		show: false,
-	});
 
 	return (
 		<StyledSidebar>
@@ -50,15 +43,9 @@ const Sidebar = ({ screen }: ISideBar) => {
 					key={item.path}
 					onClick={() => navigate(item.path)}
 					filled={screen === item.title}
-					onMouseEnter={() =>
-						setShowTooltip({ show: true, tooltipSelected: item.title })
-					}
-					onMouseLeave={() => setShowTooltip({ show: false })}
 				>
 					<item.icon size={20} />
-					{showTooltip.show && showTooltip.tooltipSelected === item.title && (
-						<Tooltip message={item.title} />
-					)}
+					<Tooltip message={item.title} />
 				</SidebarElement>
 			))}
 		</StyledSidebar>

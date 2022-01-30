@@ -29,6 +29,9 @@ export const SidebarElement = styled.section<ISideElement>`
 	:hover {
 		background-color: ${colors.softBlack1};
 		color: aquamarine;
+		> div {
+			display: block;
+		}
 	}
 `;
 

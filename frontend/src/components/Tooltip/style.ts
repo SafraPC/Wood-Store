@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { colors } from "../../themes/colors";
 
 export const ActiveTooltip = styled.div`
+	display: none;
 	position: absolute;
 	left: 65px;
 	transition: transform 0.2s ease;
