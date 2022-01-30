@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router";
-import { SidebarElement, StyledSidebar } from "./styles";
+import {
+	SidebarElement,
+	StyledSidebar,
+	StyledSpan,
+	WidthToggle,
+} from "./styles";
 import {
 	AiOutlineHome,
 	AiOutlineLogin,
 	AiOutlineShoppingCart,
 } from "react-icons/ai";
+import { BiRightArrow, BiLeftArrow } from "react-icons/bi";
 import { Tooltip } from "../Tooltip";
 
 const SidebarUpsideElements = [
@@ -35,17 +41,22 @@ type ISideBar = {
 
 const Sidebar = ({ screen }: ISideBar) => {
 	const navigate = useNavigate();
+	const [isOpenBar, setOpenBar] = useState<boolean>(false);
 
 	return (
-		<StyledSidebar>
+		<StyledSidebar opened={isOpenBar}>
+			<WidthToggle onClick={() => setOpenBar(!isOpenBar)}>
+				{isOpenBar ? <BiLeftArrow size={20} /> : <BiRightArrow size={20} />}
+			</WidthToggle>
 			{SidebarUpsideElements.map((item) => (
 				<SidebarElement
 					key={item.path}
 					onClick={() => navigate(item.path)}
 					filled={screen === item.title}
 				>
-					<item.icon size={20} />
-					<Tooltip message={item.title} />
+					<item.icon size={15} />
+					<StyledSpan opened={isOpenBar}>{item.title}</StyledSpan>
+					{!isOpenBar && <Tooltip message={item.title} />}
 				</SidebarElement>
 			))}
 		</StyledSidebar>

@@ -9,7 +9,7 @@ export const ActiveTooltip = styled.div`
 	font-size: 18px;
 	border-radius: 0.2rem;
 	background-color: ${colors.backgroundHeader};
-	color: ${colors.softWhite1};
+	color: ${colors.softWhite2};
 	padding: 0.5rem;
 	box-shadow: 1px 0.8px 0.2rem black;
 	:before {
